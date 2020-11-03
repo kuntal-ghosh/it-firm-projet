@@ -1,0 +1,225 @@
+html,
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+}
+
+.background-color {
+  background-color: #f0fff0;
+  min-height: 57.7vh;
+}
+
+/* primary button  */
+
+.primary-button {
+  background-color: #21b573;
+  color: white !important;
+  border: none;
+  padding: 8px 28px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  max-width: 150px;
+}
+
+/* navbar style */
+.nav-item {
+  margin-right: 1rem;
+  font-size: 1rem;
+  color: black !important;
+}
+.navbar .navbar-brand img {
+  height: 3.75rem;
+}
+.introduction {
+  padding: 30px 16px;
+}
+.intro-img {
+  width: 100%;
+}
+
+/* card description section design */
+.card-description {
+  padding: 2.62rem 8.43rem;
+}
+
+.card-description .card-deck .card {
+  min-width: 180px;
+  min-height: 250px;
+  max-height: 300px;
+  background-color: #f8fffb;
+  margin-bottom: 15px;
+  cursor: pointer !important;
+}
+
+.card-description .card-deck .card:hover {
+  background-color: white;
+  box-shadow: 10px -10px 20px lightgray, -10px 10px 20px lightgray;
+  transition: box-shadow 0.5s;
+}
+
+.card-description .card-deck .card .card-img-top {
+  width: 5rem;
+  height: 5rem;
+}
+
+.card .card-body {
+  padding: 0px;
+  margin-top: 40px;
+}
+
+/* online course section */
+
+.card-online-course {
+  padding-top: 0rem;
+  padding-bottom: 2.62rem;
+  padding-right: 8.43rem;
+  padding-left: 8.43rem;
+}
+
+.card-online-course .card-deck .card {
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.card-online-course .card-deck .card .card-footer {
+  background-color: white;
+  border: none;
+  padding: 0px;
+}
+
+/* Testimonial section  */
+.testimonial {
+  padding-top: 0rem;
+  padding-bottom: 2.62rem;
+  padding-right: 8.43rem;
+  padding-left: 8.43rem;
+}
+
+.testimonial .card-img-top {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+/* footer section */
+.footer {
+  min-height: 23vh;
+  background-color: black;
+  color: white;
+  padding-top: 0rem;
+  padding-bottom: 2.62rem;
+  padding-right: 8.43rem;
+  padding-left: 8.43rem;
+}
+
+.footer ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* responsive design for tablets */
+
+@media only screen and (max-width: 1079px) {
+  .card-deck {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-description .card-deck .card {
+    min-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .card-deck {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-description .card-deck .card {
+    min-width: 500px;
+  }
+  .card-online-course .card-deck .card {
+    max-width: 500px !important;
+  }
+
+  .footer-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* responsive design for large phones */
+
+@media only screen and (max-width: 700px) {
+  .card-description .card-deck .card {
+    min-width: 300px;
+  }
+
+  .card-online-course .card-deck .card {
+    max-width: 300px !important;
+  }
+  .testimonial .testimonial-flex {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card-online-course {
+    padding-top: 0rem;
+    padding-bottom: 2.62rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-deck {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+  }
+
+  .testimonial {
+    padding-top: 0rem;
+    padding-bottom: 2.62rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .footer {
+    padding-top: 0rem;
+    padding-bottom: 2.62rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+/* responsive design for small phone */
+
+@media only screen and (max-width: 320px) {
+  .card-description .card-deck .card {
+    min-width: 250px;
+  }
+
+  .card-online-course {
+    padding-top: 0rem;
+    padding-bottom: 2.62rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .card-online-course .card-deck .card {
+    min-width: 250px;
+  }
+}
