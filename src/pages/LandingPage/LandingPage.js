@@ -1,72 +1,39 @@
 import React from "react";
-import "./LandingPage.css";
-
+import "./LandingPage.scss";
+import { Switch, Route, Link } from "react-router-dom";
+import Services from "../../components/landing-page/services/Services";
+import Works from "../../components/landing-page/works/works";
+import Header from "../../components/landing-page/header/Header";
+import ClientFeedBack from "../../components/landing-page/client-feedback/ClientFeedBack";
+import Footer from "../../components/landing-page/footer/Footer";
 const LandingPage = () => {
   return (
     <div>
-      <header class="background-color">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="/vmv">
-              <img src="assets/ICON/Logo.png" alt="rgreg" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ml-auto margin-right">
-                <a class="nav-item nav-link active m-auto mr-lg-3" href="#book">
-                  Book <span class="sr-only">(current)</span>
-                </a>
-                <a class="nav-item nav-link m-auto mr-lg-3" href="#course">
-                  Courses
-                </a>
-                <a class="nav-item nav-link m-auto mr-lg-3" href="#other">
-                  Others
-                </a>
-                <a class="nav-item nav-link m-auto mr-lg-3" href="#blog">
-                  Blog
-                </a>
-                <a class="primary-button sign-in-button m-auto mr-lg-3">
-                  sign in
-                </a>
-              </div>
-            </div>
-          </nav>
+      <Header />
+      <main>
+        {/* section for services */}
+        <section className="container-fluid card-description">
+          <h2 style={{ textAlign: "center", marginBottom: "50px" }}>
+            Our Services
+          </h2>
+          <Services />
+        </section>
+        {/* section for work showup */}
+        <section className="card-online-course">
+          <h2 style={{ textAlign: "center", marginBottom: "50px" }}>
+            Our Works
+          </h2>
+          <Works />
+        </section>
 
-          <div class="introduction ">
-            <div class="row d-flex align-items-center">
-              <div class="col-md-5 introduction-padding">
-                <p style={{ color: "#FD511A" }}>Are you ready to Learn?</p>
-                <h2>
-                  Learn With fun <br />
-                  on <span style={{ color: "#21B573" }}>any schedule</span>
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur <br /> adipiscing
-                  elit. Varius blandit facilisis quam netus.
-                </p>
-                <button class="primary-button">Get Started</button>
-              </div>
-              <div class="col-md-7">
-                <img
-                  src="assets/Photos/Illustration.png"
-                  class="intro-img"
-                  alt="efwe"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+        {/* client feedback */}
+        <section className="testimonial">
+          <ClientFeedBack />
+        </section>
+      </main>
+      <footer className="footer">
+        <Footer />
+      </footer>
     </div>
   );
 };
