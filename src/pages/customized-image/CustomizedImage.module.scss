@@ -1,10 +1,20 @@
-.img_container {
+.container {
   margin-top: 100px;
+  &_text {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.img_container {
+  background: url(../../images/tshirt.jpg) no-repeat center;
+  background-size: cover;
+  max-width: 500px;
+  height: 500px;
 }
 
 .img_content {
   display: block;
-  max-width: 500px;
   margin: auto;
 }
 
