@@ -1,0 +1,131 @@
+.card_deck {
+  @media only screen and (max-width: 1079px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media only screen and (max-width: 990px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media only screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+  }
+  @media only screen and (max-width: 320px) {
+    min-width: 250px;
+  }
+}
+
+.card_description .card-deck .card {
+  min-width: 300px;
+  @media only screen and (max-width: 1079px) {
+    min-width: 300px;
+  }
+  @media only screen and (max-width: 990px) {
+    min-width: 500px;
+  }
+  @media only screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+  }
+  @media only screen and (max-width: 320px) {
+    min-width: 250px;
+  }
+}
+
+/* responsive design for tablets */
+
+@media only screen and (max-width: 1079px) {
+  .card-description .card-deck .card {
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .card-deck {
+    max-width: 300px !important;
+  }
+
+  .card-description .card-deck .card {
+  }
+  .card-online-course .card-deck .card {
+    max-width: 500px !important;
+  }
+
+  .footer-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* responsive design for large phones */
+
+@media only screen and (max-width: 700px) {
+  .card-description .card-deck .card {
+    min-width: 300px;
+  }
+
+  .card-online-course .card-deck .card {
+    max-width: 300px !important;
+  }
+  .testimonial .testimonial-flex {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card-online-course {
+    padding-top: 0rem;
+    padding-bottom: 2.62rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testimonial {
+    padding-top: 0rem;
+    padding-bottom: 2.62rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .footer {
+    padding-top: 0rem;
+    padding-bottom: 2.62rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+/* responsive design for small phone */
+
+@media only screen and (max-width: 320px) {
+  .card-description .card-deck .card {
+    min-width: 250px;
+  }
+
+  .card-online-course {
+    padding-top: 0rem;
+    padding-bottom: 2.62rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .card-online-course .card-deck .card {
+    min-width: 250px;
+  }
+}
